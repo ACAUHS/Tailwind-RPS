@@ -8,20 +8,20 @@
     <link rel="stylesheet" href="dist/main.css">
 </head>
 <body>
-    <div class=bg>
+    <div class="flex flex-col items-center gap-9">
         <h1 class="text-3xl">ROCK | PAPER | SCISSORS</h1>
-        <p>Can you get to 5 before the CPU?</p>
-        <div class = results>
+        <p class="">Can you get to 5 before the CPU?</p>
+        <div class = "results border-b-2 border-b-zinc-600">
             <span id="userScore">0</span>&nbsp-&nbsp<span id="cpuScore">0</span>
         </div>
-        <div class="selection">
-            <button class="selection border-2 border-rose-500" data-selection="rock">Rock</button>
-            <button class="selection" data-selection="paper">Paper</button>
-            <button class="selection" data-selection="scissors">Scissors</button>
-            <button id="resetGame">Reset</button>
+        <div class="selection flex gap-8">
+            <button class="selection border-2 border-rose-500 bg-rose-300 rounded-full p-4 transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:border-rose-500 duration-300" data-selection="rock">Rock</button>
+            <button class="selection border-2 border-rose-500 bg-rose-300 rounded-full p-4 transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:border-rose-500 duration-300" data-selection="paper">Paper</button>
+            <button class="selection border-2 border-rose-500 bg-rose-300 rounded-full p-4 transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:border-rose-500 duration-300" data-selection="scissors">Scissors</button>
         </div>
         <div id="scoreboard">
         </div>
+        <button id="resetGame" class="border-2 border-zinc-400 bg-zinc-200 rounded-lg px-2">Reset</button>
     </div>
     <script src="logic.js"></script>
 </body>
